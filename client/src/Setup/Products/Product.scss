@@ -1,0 +1,25 @@
+.product{
+    margin-top: 15px;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    .product-container{
+        width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width:1150px) {
+    .product{
+        padding: 20px 10px;
+        justify-content: center;
+    }
+
+}
+@media screen and (max-width:760px) {
+    .product .product-container {
+        justify-content: center;
+    }
+}

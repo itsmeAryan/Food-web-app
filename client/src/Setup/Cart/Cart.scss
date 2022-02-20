@@ -1,0 +1,97 @@
+.Cart{
+    margin-top: 30px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    .left-card{
+    padding-right: 10px;
+        flex: 6.5;
+    }
+    .right{
+    flex: 3;
+    position: static;
+    padding-left: 10px;
+    display: flex;justify-content: center;
+    .addme{
+        width: 80%;
+        padding: 10px;align-self: flex-start;
+       box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.64673);
+        h2{
+text-align: center;
+        }
+        .place-cart{
+            padding: 8px;
+            width: 80%;margin: 10px;
+            display: flex;
+            justify-content: space-between;
+            text-transform: capitalize;
+        }
+        .place-cart.total{
+            font-weight: 700;
+            font-size: 20px;
+        }
+        .tip{
+            display: flex;
+            flex-direction: column;
+            h4{
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+            .dpay{
+                display: flex;
+                flex-direction: column;
+                .pr{
+                    color: green;
+                    font-weight: 500;
+                    margin-bottom: 5px;
+                }
+                input{
+                    outline-width: 0;
+                    padding: 10px;
+
+                }
+
+            }
+        }
+        .checkout{
+            padding:0px 10px ;
+            .span{
+                width: 65%;
+                padding: 10px;
+                text-transform: capitalize;cursor: pointer;
+                text-align: center;
+                background-color: #111;
+                color: #fff;
+            }
+            .span:hover{
+                opacity: 0.9;
+            }
+        }
+    }
+    }
+}
+@media screen and (max-width:1090px) {
+    .Cart{
+        padding: 30px 10px;
+    }
+    .Cart .right .addme{
+        width: 100%;
+    }
+}
+@media screen and (max-width:750px) {
+    .Cart{
+       flex-direction: column;
+       box-shadow: 0;
+    }
+    .Cart .right .addme{
+        padding: 10px 5px;
+    }
+    .Cart .right .addme .place-cart{
+        padding: 0px;
+    }
+}
+@media screen and (max-width:470px) {
+    .left .item.size{
+        display: none;
+    }
+}

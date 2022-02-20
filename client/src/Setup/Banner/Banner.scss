@@ -1,0 +1,48 @@
+.Banner{
+    background-image: url('./b.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;padding-left: 30px;
+    position: relative;
+height: 450px;
+color: white;
+.back-space{
+width: 540px;margin-left: 30px;
+height: 80%;
+h2{
+    font-size: 48px;
+    font-weight: 800;margin-bottom: 30px;
+}
+}
+}
+
+@media screen  and (max-width:558px){
+    .Banner{
+        height: 300px;
+    }
+    .Banner .back-space{
+        margin-left: 0;
+        width: 100%;
+    }
+    .Banner .back-space h2{
+        font-size: 23px;
+    }
+    .MuiButton-containedSizeLarge{
+ width: 160px!important;
+ padding: 0!important;
+ padding: 5px!important;
+    }
+}
+@media screen and (max-width:350px){
+    .Banner {
+        padding-left: 10px;
+        height: 250px;
+    }
+    .Banner .back-space {
+        img{
+            display: none!important;
+        }
+    }
+}

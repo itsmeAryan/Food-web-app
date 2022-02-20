@@ -1,0 +1,102 @@
+.SingleItem{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    padding: 20px;
+.left,
+.right{
+    flex: 1;
+}
+.left{
+    img{
+        width: 80%;
+        object-fit: cover;
+        object-position: cover;
+    }
+}
+.right{
+    padding-left: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .title{
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 6px;
+        color: rgb(35, 199, 136);
+    }
+    .desc{
+        color: gray;
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    .item{
+        width: 55%;
+        margin-bottom: 18px;
+        .option{
+            font-size: 25px;
+            font-weight: 500;
+            margin-bottom: 10px;
+
+        }
+        select{
+            width: 100%;
+            padding: 15px;
+            font-size: 17px;
+            outline-width: 0;
+        }
+    }
+    .add{
+        width: 55%;
+        display: flex;
+        justify-content: space-between;
+        .num{
+            width: 100px;
+            display: flex;
+            align-items: center;justify-content: center;
+            border: 1px solid rgb(7, 7, 7);
+            font-size: 18px;outline-width: 0;
+            font-weight: 700;
+            padding-left: 50px;
+        }
+    }
+}
+}
+@media screen and (max-width:1100px){
+    .SingleItem{
+    .right {.item ,
+     .add{
+        width: 75%;
+    }
+}
+}
+}
+@media screen and (max-width:840px) {
+    .SingleItem{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:470px) {
+    .SingleItem .right{
+        padding-left: 10px;
+    }
+    .SingleItem .right{ .item,.add{
+        width: 90%;
+    }
+}
+}
+@media screen and (max-width:370px) {
+    .SingleItem .right{
+        padding-left: 10px;
+    }
+    .SingleItem .right{ .item,.add{
+        display: flex;
+        flex-direction: column;
+        .num{
+            width: 94%;
+            margin-bottom: 10px;
+            padding: 8px;
+        }
+    }
+}
+}

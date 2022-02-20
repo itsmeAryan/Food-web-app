@@ -1,0 +1,103 @@
+.ProductItem{
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.747);
+    width: 330px;overflow: hidden;
+    margin: 10px;
+    .img{
+        order: 2;
+        flex: 4;
+        padding: 2px;
+        img{
+            width: 100%;
+            object-fit: cover;
+            height: 150px;
+            object-position: cover;
+        }
+    }
+    .product-detials{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        flex: 5;
+        .title{
+            font-size: 26px;
+            text-transform: capitalize;
+            font-weight: 700;
+        }
+        .desc{
+            color: rgb(139, 139, 139);
+            font-weight: 500;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .price{
+            font-weight: 700;
+            font-size: 21px;
+            color: rgb(45, 171, 221);
+
+        }
+        a{
+            display: flex;
+            .btn{
+                background-color: bisque;
+                padding:8px 10px;
+                width: 55%;
+                margin-top: 10px;
+                font-size: 18px;
+                text-transform: capitalize;
+                border-radius: 6px;
+                font-weight: 500;
+                cursor: pointer;
+                &:hover{
+                    background-color: #000000;
+                    color: #fff;
+                }
+            }
+            
+        }
+    }
+}
+@media screen and (max-width:1155px) {
+   .ProductItem{
+       width: 300px;
+   }
+   .ProductItem .product-detials a .btn {
+       width: 100%;
+   }
+}
+@media screen and (max-width:985px) {
+    .ProductItem{
+        width: 270px;
+    }
+    .ProductItem .product-detials a .btn {
+        width: 100%;
+    }
+ }
+ @media screen and (max-width:905px) {
+    .ProductItem{
+        width: 350px;
+    }
+    .ProductItem .product-detials a .btn {
+        width: 100%;
+    }
+ }
+ @media screen and (max-width:760px) {
+    .ProductItem{
+        width: 80%;
+    }
+    .ProductItem .product-detials a .btn {
+        width: 100%;
+        text-align: center;
+    }
+ }
+ @media screen and (max-width:450px) {
+    .ProductItem{
+        width: 100%;
+    }
+    .ProductItem .product-detials a .btn {
+        width: 100%;
+        text-align: center;
+    }
+ }
